@@ -1,0 +1,223 @@
+html,
+body {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+}
+section {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 20px 0;
+}
+section hr {
+  width: 30px;
+}
+.cor_fundo {
+  background: rgb(74, 145, 74);
+
+}
+/* --header-- */
+header {
+  height: 89px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background: rgb(255, 255, 255);
+}
+header #logo {
+  position: absolute;
+  top: 10px;
+  float: left;
+  height: 75px;
+  width: 170px;
+  margin-left: 2%;
+}
+header #logo img{
+  max-height: 100%;
+}
+header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 0px;
+  margin-right: 5%;
+}
+header .menu li {
+  float: left;
+  font-size: 18px;
+  padding: 20px 10px 20px 10px;
+}
+header .menu li a {
+  color: initial;
+  text-decoration: initial;
+  color:  rgb(36, 61, 36);
+}
+header .menu li:hover {
+  background-color:lightgreen;
+}
+/* --capa-- */
+figure {
+  margin: 0 auto;
+}
+figure .imagem_fundo {
+  background: url(img/capa-fundo.jpg); 
+  background-size: cover;
+  height: 100%;
+  padding: 10px;
+}
+figure .titulo {
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-shadow: 1px 1px black;
+ 
+}
+figure h1.titulo {
+  font-size: 70px;
+  text-align: center;
+  letter-spacing: -5px;
+  margin: 20% 20% 0 20%;
+  padding-bottom: 20px;
+}
+figure h2.titulo {
+  padding-top: 20px;
+  font-size: 30px;
+  margin: 0 30% 0 30%;
+  border-top: 3px solid white;
+  padding-bottom: 30px;
+}
+.cta {
+  border: 1px solid white;
+  border-radius: 8px;
+  color: rgb(28, 59, 42);
+  padding: 10 20 10 20;
+  text-decoration: initial;
+  font-size: 20px;
+}
+.cta:hover {
+  background-color: rgb(74, 145, 74);
+  border: 0px;
+}
+/* -- desenvolvimento-- */
+.frase{
+  color: rgb(28, 59, 42);
+  font-size: 40px;
+  text-align: center;
+  padding: 25px;
+
+}
+
+.coluna {
+  float: left;
+  padding: 0 5%;
+  position: relative;
+}
+.coluna.um{
+  margin-top: 5%;
+  width: 500px;
+}
+
+.coluna.quatro {
+  width: 15%;
+  padding: 0 5% 0 5%;
+ 
+}
+.coluna.tres {
+  width: 30%;
+  align-items: center;
+  color: white;
+}
+.coluna.dois {
+  width: 40%;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+.coluna .icone {
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  text-align: center;
+  margin: 0 auto;
+}
+.coluna .icone img{
+  max-width: 60%;
+  max-height: 60%;
+  margin: 15px;
+}
+.coluna:hover > .icone {
+  background: lightgreen;
+}
+.coluna img {
+  width: 100%;
+  
+}
+.coluna.cinco{
+  color:rgb(36, 61, 36);
+  background-color: white;
+  font-size: 12px;
+}
+
+section#menu2{
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+h2 {
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+.esquerda {
+  text-align: left;
+}
+.direita {
+  text-align: right;
+}
+.centro {
+  text-align: center;
+}
+.justificado {
+  text-align: justify;
+}
+/* --------  Footer  -------- */
+footer {
+  background-color:rgb(255, 255, 255);
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 50px 0;
+ 
+}
+footer .container {
+  padding: 30px 0 50px 0;
+  color: black
+}
+/* --responsividade--*/
+@media all and (max-width: 768px) {
+  .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
+    display: block;
+    width: 80%;
+    padding: 0;
+    margin: 10px auto;
+    float: none;
+  }
+  header #logo {
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  figure h1.titulo {
+    margin-top: 40%;
+  }
+  figure h2.titulo {
+    margin: 0 10% 0 10%;
+  }
+}
